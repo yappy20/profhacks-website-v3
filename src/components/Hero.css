@@ -21,6 +21,17 @@
   opacity: 0 !important;
 }
 
+/* Remove any pseudo-elements that might create circles */
+.hero::before,
+.hero::after,
+.hero-content::before,
+.hero-content::after,
+.hero-title::before,
+.hero-title::after {
+  display: none !important;
+  content: none !important;
+}
+
 .hero-content {
   position: relative;
   z-index: 2;
