@@ -1,0 +1,28 @@
+.about {
+  background: var(--space-dark);
+  position: relative;
+}
+
+
+.about-content {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.about-description {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  padding: 0 2rem;
+}
+
+@media (max-width: 768px) {
+  .about-description {
+    font-size: 1.1rem;
+    padding: 0 1rem;
+  }
+}
+
