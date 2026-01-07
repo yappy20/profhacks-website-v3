@@ -25,11 +25,6 @@ function Hero() {
           <div className="scroll-arrow">↓</div>
         </div>
       </div>
-      <div className="hero-planets">
-        <div className="planet planet-1"></div>
-        <div className="planet planet-2"></div>
-        <div className="planet planet-3"></div>
-      </div>
     </section>
   )
 }
