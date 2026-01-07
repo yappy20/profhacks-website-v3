@@ -10,6 +10,17 @@
   overflow: hidden;
 }
 
+/* Explicitly hide any planet or circle elements */
+.hero-planets,
+.planet,
+.planet-1,
+.planet-2,
+.planet-3 {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
+
 .hero-content {
   position: relative;
   z-index: 2;
