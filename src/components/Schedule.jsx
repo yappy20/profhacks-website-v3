@@ -18,9 +18,6 @@ function Schedule() {
         <div className="timeline">
           {schedule.map((item, index) => (
             <div key={index} className="timeline-item">
-              <div className="timeline-marker">
-                <span className="marker-icon">{item.icon}</span>
-              </div>
               <div className="timeline-content">
                 <div className="timeline-day">{item.day}</div>
                 <div className="timeline-time">{item.time}</div>

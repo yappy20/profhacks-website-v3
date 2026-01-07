@@ -20,7 +20,7 @@
 
 .timeline-item {
   position: relative;
-  padding-left: 120px;
+  padding-left: 0;
   margin-bottom: 3rem;
   animation: slideIn 0.6s ease-out;
 }
@@ -34,24 +34,6 @@
     opacity: 1;
     transform: translateX(0);
   }
-}
-
-.timeline-marker {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100px;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(30, 58, 95, 0.4);
-  border: 2px solid var(--cowboy-gold);
-  border-radius: 50%;
-}
-
-.marker-icon {
-  font-size: 2.5rem;
 }
 
 .timeline-content {
@@ -95,16 +77,7 @@
   }
 
   .timeline-item {
-    padding-left: 90px;
-  }
-
-  .timeline-marker {
-    width: 70px;
-    height: 70px;
-  }
-
-  .marker-icon {
-    font-size: 2rem;
+    padding-left: 0;
   }
 
   .timeline-content {
