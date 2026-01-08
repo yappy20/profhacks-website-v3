@@ -24,13 +24,6 @@ function Prizes() {
       color: 'var(--neon-blue)',
       description: 'Third Place'
     },
-    { 
-      rank: 'Best Design', 
-      reward: 'TBD', 
-      icon: '🎨',
-      color: 'var(--cowboy-orange)',
-      description: 'Most Creative'
-    },
   ]
 
   return (
