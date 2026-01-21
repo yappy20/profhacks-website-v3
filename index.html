@@ -25,9 +25,54 @@
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/assets/favicon-D9Qx0RMO-D9Qx0RMO.ico" />
-    <script type="module" crossorigin src="/assets/index-DEqBoWxP.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-CQUTXbwU.css">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon-D9Qx0RMO.ico" />
+    
+    <!-- Remove cursor attributes -->
+    <script>
+      (function() {
+        function removeCursorAttr() {
+          const root = document.getElementById('root');
+          if (root) {
+            root.removeAttribute('data-cursor-element-id');
+          }
+        }
+        
+        // Remove immediately if root exists
+        removeCursorAttr();
+        
+        // Remove on DOM ready
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', removeCursorAttr);
+        } else {
+          removeCursorAttr();
+        }
+        
+        // Watch for attribute changes on root element
+        setTimeout(function() {
+          const root = document.getElementById('root');
+          if (root) {
+            const observer = new MutationObserver(function(mutations) {
+              mutations.forEach(function(mutation) {
+                if (mutation.type === 'attributes' && 
+                    mutation.attributeName === 'data-cursor-element-id') {
+                  const target = mutation.target;
+                  if (target && target.hasAttribute('data-cursor-element-id')) {
+                    target.removeAttribute('data-cursor-element-id');
+                  }
+                }
+              });
+            });
+            
+            observer.observe(root, {
+              attributes: true,
+              attributeFilter: ['data-cursor-element-id']
+            });
+          }
+        }, 100);
+      })();
+    </script>
+    <script type="module" crossorigin src="/assets/index-CGgmr61n.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-Y03j30Dr.css">
   </head>
   
   <body>
