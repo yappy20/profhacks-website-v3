@@ -7,7 +7,13 @@ export default defineConfig({
   base: '/',
   server: {
     port: 8000,
-    open: true
+    open: true,
+    hmr: {
+      overlay: true
+    },
+    watch: {
+      usePolling: false
+    }
   },
   build: {
     outDir: 'dist',

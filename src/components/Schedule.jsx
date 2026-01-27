@@ -1,5 +1,4 @@
 import React from 'react'
-import './Schedule.css'
 
 function Schedule() {
   const schedule = [

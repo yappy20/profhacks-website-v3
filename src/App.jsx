@@ -6,25 +6,12 @@ import Schedule from './components/Schedule'
 import Prizes from './components/Prizes'
 import Sponsors from './components/Sponsors'
 import Footer from './components/Footer'
-import './App.css'
+import Stars from './components/Stars'
 
 function App() {
   return (
     <div className="app">
-      <div className="stars-background">
-        {[...Array(100)].map((_, i) => (
-          <div
-            key={i}
-            className="star"
-            style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-              animationDelay: `${Math.random() * 2}s`,
-              animationDuration: `${2 + Math.random() * 3}s`
-            }}
-          />
-        ))}
-      </div>
+      <Stars />
       <Navbar />
       <Hero />
       <About />

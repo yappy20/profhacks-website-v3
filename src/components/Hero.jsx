@@ -1,5 +1,5 @@
 import React from 'react'
-import './Hero.css'
+import Countdown from './Countdown'
 
 function Hero() {
   return (
@@ -12,6 +12,7 @@ function Hero() {
         <p className="hero-subtitle">
           Saddle up, space rangers! The ultimate hackathon adventure awaits in the final frontier.
         </p>
+        <Countdown />
         <div className="hero-buttons">
           <a href="#about" className="btn btn-primary">
             🚀 Explore
