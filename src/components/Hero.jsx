@@ -15,9 +15,6 @@ function Hero() {
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSdumgUNuPOQbM0TsbCS0n6mQSwiDPvM8ZVfbzNFh5x118El0g/viewform" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
             🚀 Register Now
           </a>
-          <a href="#about" className="btn btn-secondary">
-            ⚡ Explore
-          </a>
           <a href="#schedule" className="btn btn-secondary">
             📅 Schedule
           </a>
