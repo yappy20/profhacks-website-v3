@@ -325,6 +325,23 @@ section {
   margin-right: auto;
 }
 
+/* Hide countdown if it still exists */
+.countdown-container,
+.countdown-title,
+.countdown-grid,
+.countdown-item,
+.countdown-value,
+.countdown-label,
+.countdown-separator {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  height: 0 !important;
+  width: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
 .hero-buttons {
   display: flex;
   gap: 1.5rem;
