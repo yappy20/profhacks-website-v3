@@ -3,25 +3,25 @@ import React from 'react'
 function Prizes() {
   const prizes = [
     { 
-      rank: '1st Place', 
-      reward: 'TBD', 
+      rank: 'Galactic Games', 
+      reward: '2 PS5s & 2 Sony Headphones', 
       icon: '🥇',
       color: '#256EFF',
-      description: 'Grand Prize'
+      description: 'Track 1'
     },
     { 
-      rank: '2nd Place', 
-      reward: 'TBD', 
+      rank: 'Tools of the Frontier', 
+      reward: 'Mechanical Keyboards', 
       icon: '🥈',
       color: '#3DDC97',
-      description: 'Runner Up'
+      description: 'Track 2'
     },
     { 
-      rank: '3rd Place', 
-      reward: 'TBD', 
+      rank: 'Outlaws & Automation', 
+      reward: 'Selected Lego Sets', 
       icon: '🥉',
-      color: '#46237A',
-      description: 'Third Place'
+      color: '#9D4EDD',
+      description: 'Track 3'
     },
   ].slice(0, 3) // Explicitly limit to 3 prizes
 
@@ -52,11 +52,10 @@ function Prizes() {
           })
           .slice(0, 3) // Force limit to 3 prizes maximum
           .map((prize, index) => (
-            <div key={index} className="prize-card" style={{ '--prize-color': prize.color }}>
-              <div className="prize-icon">{prize.icon}</div>
+            <div key={index} className={`prize-card ${index === 2 ? 'prize-card-track3' : ''}`} style={{ '--prize-color': prize.color }}>
+              <div className="prize-description">{prize.description}</div>
               <div className="prize-rank">{prize.rank}</div>
               <div className="prize-reward">{prize.reward}</div>
-              <div className="prize-description">{prize.description}</div>
             </div>
           ))}
       </div>

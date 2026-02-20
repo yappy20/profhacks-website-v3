@@ -560,36 +560,59 @@ section {
               inset 0 0 50px rgba(37, 110, 255, 0.3);
 }
 
+.prize-card-track3 .prize-description,
+.prize-card-track3 .prize-rank {
+  color: #9D4EDD;
+  text-shadow: 0 0 20px rgba(157, 78, 221, 0.9),
+               0 0 40px rgba(157, 78, 221, 0.6),
+               0 0 60px rgba(157, 78, 221, 0.4);
+}
+
+.prize-card-track3 {
+  box-shadow: 0 4px 25px rgba(157, 78, 221, 0.4),
+              inset 0 0 30px rgba(157, 78, 221, 0.15);
+}
+
+.prize-card-track3:hover {
+  box-shadow: 0 8px 45px rgba(157, 78, 221, 0.6),
+              inset 0 0 50px rgba(157, 78, 221, 0.25);
+}
+
 .prize-icon {
-  font-size: 5rem;
-  margin-bottom: 1rem;
+  font-size: 3rem;
+  margin-bottom: 0.75rem;
   display: block;
+}
+
+.prize-description {
+  font-family: 'Orbitron', monospace;
+  font-size: 1.75rem;
+  font-weight: 900;
+  color: var(--prize-color);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin-bottom: 0.75rem;
+  text-shadow: 0 0 15px var(--prize-color),
+               0 0 30px rgba(37, 110, 255, 0.6);
+  line-height: 1.2;
 }
 
 .prize-rank {
   font-family: 'Orbitron', monospace;
-  font-size: 1.3rem;
-  color: var(--prize-color);
+  font-size: 0.95rem;
+  color: var(--text-secondary);
   text-transform: uppercase;
   letter-spacing: 0.1em;
   margin-bottom: 0.5rem;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .prize-reward {
-  font-size: 2.5rem;
-  font-weight: 900;
+  font-size: 1.25rem;
+  font-weight: 700;
   color: var(--text-primary);
   margin-bottom: 0.5rem;
-  text-shadow: 0 0 20px var(--prize-color),
-               0 0 40px rgba(37, 110, 255, 0.5);
-}
-
-.prize-description {
-  font-size: 1rem;
-  color: var(--text-muted);
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
+  text-shadow: 0 0 10px rgba(37, 110, 255, 0.3);
 }
 
 .prizes-note {
@@ -883,11 +906,11 @@ section {
   }
 
   .prize-icon {
-    font-size: 4rem;
+    font-size: 2.5rem;
   }
 
   .prize-reward {
-    font-size: 2rem;
+    font-size: 1.25rem;
   }
 
   .sponsors-grid {
@@ -910,9 +933,7 @@ section {
     font-size: 1rem;
     max-width: calc(100% - 1rem);
     width: auto;
-  }
-
-  .footer-content {
+  }  .footer-content {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
