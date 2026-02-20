@@ -11,6 +11,10 @@ function Hero() {
         <p className="hero-subtitle">
           Saddle up, space rangers! The ultimate hackathon adventure awaits in the final frontier.
         </p>
+        <div className="hero-date-time">
+          <span className="hero-date">March 20–21, 2026</span>
+          <span className="hero-checkin">Check-in: 5:00 PM – 6:30 PM</span>
+        </div>
         <div className="hero-buttons">
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSdumgUNuPOQbM0TsbCS0n6mQSwiDPvM8ZVfbzNFh5x118El0g/viewform" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
             🚀 Register Now

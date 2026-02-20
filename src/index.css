@@ -325,6 +325,34 @@ section {
   margin-right: auto;
 }
 
+.hero-date-time {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem 2rem;
+  margin-bottom: 2rem;
+  font-family: 'Orbitron', monospace;
+}
+
+.hero-date {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--accent-primary);
+  text-shadow: 0 0 15px rgba(37, 110, 255, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.hero-checkin {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--accent-secondary);
+  text-shadow: 0 0 10px rgba(61, 220, 151, 0.5);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
 /* Hide countdown if it still exists */
 .countdown-container,
 .countdown-title,
@@ -872,6 +900,19 @@ section {
 
   .hero-subtitle {
     font-size: 1.2rem;
+  }
+
+  .hero-date-time {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .hero-date {
+    font-size: 1.1rem;
+  }
+
+  .hero-checkin {
+    font-size: 1rem;
   }
 
   .btn {
