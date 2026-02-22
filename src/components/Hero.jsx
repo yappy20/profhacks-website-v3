@@ -23,6 +23,12 @@ function Hero() {
             📅 Schedule
           </a>
         </div>
+        <p className="hero-volunteer">
+          Don&apos;t wanna hack?{' '}
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSf4Hq7LqJCgmp-SYuQfYS0gp60PtkUVEjKHQNWHBEXvrSzwwQ/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">
+            Volunteer
+          </a>
+        </p>
         <div className="hero-scroll">
           <span>Scroll to explore</span>
           <div className="scroll-arrow">↓</div>

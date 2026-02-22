@@ -375,7 +375,26 @@ section {
   gap: 1.5rem;
   justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
+}
+
+.hero-volunteer {
+  margin-bottom: 3rem;
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+}
+
+.hero-volunteer a {
+  color: var(--accent-secondary);
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease, text-shadow 0.2s ease;
+}
+
+.hero-volunteer a:hover {
+  border-bottom-color: var(--accent-secondary);
+  text-shadow: 0 0 10px rgba(61, 220, 151, 0.6);
 }
 
 .hero-scroll {
