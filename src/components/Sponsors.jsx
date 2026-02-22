@@ -30,12 +30,6 @@ function Sponsors() {
           </div>
         ))}
       </div>
-      <div className="sponsors-cta">
-        <p>Want to join our mission?</p>
-        <a href="mailto:sponsor@profhacks.org" className="btn btn-primary">
-          Become a Sponsor
-        </a>
-      </div>
     </section>
   )
 }
